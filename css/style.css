@@ -40,6 +40,8 @@ div#content section {
     display: inherit;
     flex-direction: row;
     flex-wrap: wrap;
+    border-right: 1px solid var(--dark-foreground-color);
+    margin: var(--general-padding) 0 var(--general-margin) 0;
 }
 div#content aside {
     width: 20vw;
@@ -77,7 +79,13 @@ aside {
     padding: var(--general-padding);
     padding-top: calc(var(--general-padding) * 1.5);
 }
-
+article h3 {
+    margin: var(--general-margin);
+}
+article p {
+    margin: var(--general-margin);
+    line-height: 1.5;
+}
 article {
    flex: 33.33%;
 }
@@ -85,6 +93,7 @@ article div {
     margin: var(--general-margin);
     border: 1px solid var(--grey-foreground-color);
 }
+
 article div img {
     height: 500px;
     width: 100%;
